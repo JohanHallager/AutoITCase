@@ -1,5 +1,12 @@
 # AutoITCase
 
+## Menu
+* [Login](#login)
+* [Packages](#packages)
+* [Areas of interest](#areas-of-interest)
+* [icing on the cake](#icing-on-the-cake)
+
+
 ## Login
 User: 42@johanhallager.dk
 
