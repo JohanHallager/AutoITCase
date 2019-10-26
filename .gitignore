@@ -372,6 +372,8 @@ MigrationBackup/
 # Make sure to include details from VisualStudio.gitignore BEFORE this
 !**/App_Data/[Pp]ackages/*
 !**/[Uu]mbraco/[Dd]eveloper/[Pp]ackages/*
+!**/App_Data/Umbraco.sdf
+
 
 # ImageProcessor DiskCache
 **/App_Data/cache/
