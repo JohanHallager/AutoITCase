@@ -1,0 +1,15 @@
+﻿{
+  "gridEditors": [
+    {
+      "name": "Cars",
+      "icon": "icon-car",
+      "alias": "cars",
+      "view": "/app_plugins/Cars/editor/editor.html",
+      "render": "/app_plugins/Cars/render/carsrender.cshtml",
+      "config": {}
+    }
+  ],
+  "javascript": [
+    "/app_plugins/Cars/editor/editor.controller.js"
+  ]
+}

@@ -1,0 +1,10 @@
+﻿<div ng-controller="cars.grideditorcontroller">
+    <div ng-click="openDialogClick()">
+        <div ng-if="car != null">
+            <span>{{car.Name}}</span>
+        </div>
+        <div ng-if="car == null">
+            <button class="btn">Click to get a car</button>
+        </div>
+    </div>
+</div>

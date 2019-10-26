@@ -1,0 +1,32 @@
+﻿<div ng-controller="cars.GetOriginsDialogcontroller">
+   
+
+    <div class="umb-panel">
+        <div class="umb-panel-body no-header umb-scrollable with-footer">
+            <div class="umb-pane">
+                <h4>Select origins</h4>
+                <select ng-model="selectedItem" ng-change="getAllCarsByOrigin()">
+                    <option ng-repeat="origin in origins">{{origin}}</option>
+                </select>
+                <div ng-if="cars">
+                    <div ng-repeat="car in cars">
+                        <label>
+                            <input type="radio" name="cars" ng-click="onSelectCar(car)" ng-value="car" />
+                            {{ car.Name }}
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="umb-panel-footer">
+            <div class="btn-toolbar umb-btn-toolbar">
+                <a class="btn btn-link" ng-click="close()">
+                    <localize key="cancel" />
+                </a>
+                <a href ng-click="submit(selectedCar)" ng-disabled="selectedCar == null"  class="btn btn-primary">
+                    <localize key="buttons_save">Save</localize>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
