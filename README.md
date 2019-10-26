@@ -17,6 +17,7 @@ bruges til at lave grid editor
 
 ## Areas of interest
 **Iconic** bruges som en DataType : *Iconic icons*
+
 **CustomLink.cshtml** - \CodeCaseAutoIT\CodeCaseAutoIT\Views\Partials\Grid\Editors\CustomLink.cshtml
 ```
 @inherits UmbracoViewPage<Lecoati.LeBlender.Extension.Models.LeBlenderModel>
