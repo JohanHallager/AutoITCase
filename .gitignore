@@ -374,9 +374,11 @@ MigrationBackup/
 !**/[Uu]mbraco/[Dd]eveloper/[Pp]ackages/*
 !**/App_Data/Umbraco.sdf
 
+!/*/bin/Lecoati.LeBlender.Extension.dll
 
 # ImageProcessor DiskCache
 **/App_Data/cache/
 
 # Ignore the Models Builder models out of date flag
 **/App_Data/Models/ood.flag
+
