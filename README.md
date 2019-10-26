@@ -108,3 +108,16 @@ else
         }
     }
 ```
+
+## icing on the cake
+En ekstra grid editor er lavet med tilhørende WebApi.
+Grid editoren kan hen en bil ud fra api´en og vise den i denne format '[Name] from [Year] made in [Origin]'
+Grid editoren virker ved at vælge en Origin fra en dropdown liste og der efter modtage en liste af biler.
+Her efter er det muligt at vælge en bil.
+
+
+
+
+
+
+
