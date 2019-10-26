@@ -6,15 +6,17 @@ User: 42@johanhallager.dk
 Pass: 1111111111
 
 ##  Packages
-### Iconic -  [https://our.umbraco.com/.../iconic](https://our.umbraco.com/packages/backoffice-extensions/iconic/)
+**Iconic** -  [https://our.umbraco.com/.../iconic](https://our.umbraco.com/packages/backoffice-extensions/iconic/)
+
 bruges til at hente Umbraco ikoner ind fra ~/Umbraco/assets/css/umbraco.css
-### LeBlender - [https://our.umbraco.com/.../leblender](https://our.umbraco.com/packages/backoffice-extensions/leblender/)
+**LeBlender** - [https://our.umbraco.com/.../leblender](https://our.umbraco.com/packages/backoffice-extensions/leblender/)
+
 bruges til at lave grid editor
 
 
 ## Areas of interest
 **Iconic** bruges som en DataType : *Iconic icons*
-### CustomLink.cshtml - \CodeCaseAutoIT\CodeCaseAutoIT\Views\Partials\Grid\Editors\CustomLink.cshtml
+**CustomLink.cshtml** - \CodeCaseAutoIT\CodeCaseAutoIT\Views\Partials\Grid\Editors\CustomLink.cshtml
 ```
 @inherits UmbracoViewPage<Lecoati.LeBlender.Extension.Models.LeBlenderModel>
 @using Newtonsoft.Json.Linq
@@ -56,7 +58,7 @@ else
     <a class="btn btn-lg btn-outline" style="@setMaxInEditor border-color:#ffb317; color:#ffb317;  background-color:#343a40;">Click here</a>
 } 
 ```
-### grid.editors.config.js - \CodeCaseAutoIT\CodeCaseAutoIT\config\grid.editors.config.js
+**grid.editors.config.js** - \CodeCaseAutoIT\CodeCaseAutoIT\config\grid.editors.config.js
 ```
 {
         "name": "Custom link",
