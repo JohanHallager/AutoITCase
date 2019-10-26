@@ -1,5 +1,12 @@
 # AutoITCase
 
+## Menu
+* [Login](#login)
+* [Packages](#packages)
+* [Areas of interest](#areas-of-interest)
+* [icing on the cake](#icing-on-the-cake)
+
+
 ## Login
 User: 42@johanhallager.dk
 
@@ -108,3 +115,17 @@ else
         }
     }
 ```
+
+## icing on the cake
+En ekstra grid editor er lavet med tilhørende WebApi.
+Grid editoren kan hen en bil ud fra api´en og vise den i dette format `[Name] from [Year] made in [Origin]`.
+
+Grid editoren virker ved at vælge en Origin fra en dropdown liste og der efter modtage en liste af biler.
+Her efter er det muligt at vælge en bil.
+
+
+
+
+
+
+
