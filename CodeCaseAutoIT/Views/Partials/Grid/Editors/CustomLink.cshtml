@@ -1,0 +1,39 @@
+﻿@inherits UmbracoViewPage<Lecoati.LeBlender.Extension.Models.LeBlenderModel>
+@using Newtonsoft.Json.Linq
+
+@{ 
+    var setMaxInEditor = ""; // set Max width if in backoffice
+}
+
+@if (Request.Url.ToString().Contains("/umbraco/backoffice/"))
+{
+    setMaxInEditor = "max-width: 84%;";
+    <link rel="stylesheet" href="@Url.Content("~/css/custom-style.css")" />
+}
+
+@if (Model.Items.Any())
+{
+    foreach (var item in Model.Items)
+    {
+        var icon = !string.IsNullOrEmpty(item.GetValue("icon")) ? JObject.Parse(item.GetValue("icon"))["icon"] : "";
+        var title = !string.IsNullOrEmpty(item.GetValue("title")) ? item.GetValue("title") : "";
+        var url = !string.IsNullOrEmpty(item.GetValue("url")) ? item.GetValue("url") : "#";
+        var color = !string.IsNullOrEmpty(item.GetValue("color")) ? "#" + item.GetValue("color") : "#ffb317";
+        var bcColor = !string.IsNullOrEmpty(item.GetValue("bcColor")) ? "#" + item.GetValue("bcColor") : "#343a40";
+
+        <a href="@url" class="ait btn btn-outline" style="@setMaxInEditor  border-color:@color; color:@color;  background-color:@bcColor;"><i class="@icon"></i> @title</a>
+
+        if (title == "")
+        {
+            <p>please enter a Title</p>
+        }
+        if (url == "")
+        {
+            <p>please enter a Url</p>
+        }
+    }
+}
+else
+{
+    <a class="btn btn-lg btn-outline" style="@setMaxInEditor border-color:#ffb317; color:#ffb317;  background-color:#343a40;">Click here</a>
+} 
