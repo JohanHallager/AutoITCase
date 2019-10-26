@@ -2,6 +2,7 @@
 
 ## Login
 User: 42@johanhallager.dk
+
 Pass: 1111111111
 
 ##  Packages
@@ -12,7 +13,7 @@ bruges til at lave grid editor
 
 
 ## Areas of interest
-### Iconic findes under DataType : Iconic icons
+**Iconic** bruges som en DataType : *Iconic icons*
 ### CustomLink.cshtml - \CodeCaseAutoIT\CodeCaseAutoIT\Views\Partials\Grid\Editors\CustomLink.cshtml
 ```
 @inherits UmbracoViewPage<Lecoati.LeBlender.Extension.Models.LeBlenderModel>
